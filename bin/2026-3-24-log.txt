@@ -1,0 +1,125 @@
+12:42:22=>[info] first log message!
+12:42:22=>[error] /home/ubuntu/workplace/code/MPRPC/example/callee/friendservice.cc:main:47
+12:42:22=>[info] service_name: FriendServiceRpc
+12:42:22=>[info] method_name: GetFriendList
+12:42:22=>[info] zookeeper_init success!
+12:42:22=>[info] zookeeper create node success! path: /FriendServiceRpc/GetFriendList
+12:42:22=>[info] RpcProvider start service at 127.0.0.1:8001
+12:42:24=>[info] zookeeper_init success!
+12:42:22=>[info] ====================================================
+12:42:24=>[info] header_size: 35
+12:42:24=>[info] service_name: FriendServiceRpc
+12:42:24=>[info] method_name: GetFriendList
+12:42:24=>[info] args_size: 2
+12:42:24=>[info] args_str: d
+12:42:24=>[info] ====================================================
+14:23:56=>[info] first log message!
+14:23:56=>[error] /home/ubuntu/workplace/code/MPRPC/example/callee/friendservice.cc:main:47
+14:23:56=>[info] service_name: FriendServiceRpc
+14:23:56=>[info] method_name: GetFriendList
+14:23:56=>[info] zookeeper_init success!
+14:23:56=>[info] RpcProvider start service at 127.0.0.1:8001
+14:24:8=>[info] zookeeper_init success!
+14:24:8=>[error] zookeeper get node error! path: /UserServiceRpc/Register error code: -101
+14:25:51=>[info] first log message!
+14:25:51=>[error] /home/ubuntu/workplace/code/MPRPC/example/callee/friendservice.cc:main:47
+14:25:51=>[info] service_name: FriendServiceRpc
+14:25:51=>[info] method_name: GetFriendList
+14:25:51=>[info] zookeeper_init success!
+14:25:51=>[info] zookeeper create node success! path: /FriendServiceRpc/GetFriendList
+14:25:51=>[info] RpcProvider start service at 127.0.0.1:8001
+14:25:54=>[info] zookeeper_init success!
+14:25:54=>[error] zookeeper get node error! path: /UserServiceRpc/Login error code: -101
+14:29:25=>[info] first log message!
+14:29:25=>[error] /home/ubuntu/workplace/code/MPRPC/example/callee/friendservice.cc:main:47
+14:29:25=>[info] service_name: FriendServiceRpc
+14:29:25=>[info] method_name: GetFriendList
+14:29:25=>[info] zookeeper_init success!
+14:29:25=>[info] RpcProvider start service at 127.0.0.1:8001
+14:29:26=>[info] zookeeper_init success!
+14:29:26=>[error] zookeeper get node error! path: /UserServiceRpc/Login error code: -101
+16:45:41=>[info] first log message!
+16:45:41=>[error] /home/ubuntu/workplace/code/MPRPC/example/callee/friendservice.cc:main:44
+16:45:41=>[info] service_name: FriendServiceRpc
+16:45:41=>[info] method_name: GetFriendList
+16:45:41=>[info] zookeeper_init success!
+16:45:41=>[info] zookeeper create node success! path: /FriendServiceRpc/GetFriendList
+16:45:41=>[info] RpcProvider start service at 127.0.0.1:8001
+16:45:55=>[info] zookeeper_init success!
+16:45:41=>[info] ====================================================
+16:45:55=>[info] header_size: 35
+16:45:55=>[info] service_name: FriendServiceRpc
+16:45:55=>[info] method_name: GetFriendList
+16:45:55=>[info] args_size: 2
+16:45:55=>[info] args_str: d
+16:45:55=>[info] ====================================================
+16:52:29=>[info] first log message!
+16:52:29=>[error] /home/ubuntu/workplace/code/MPRPC/example/callee/userservice.cc:main:69
+16:52:29=>[info] service_name: UserServiceRpc
+16:52:29=>[info] method_name: Login
+16:52:29=>[info] method_name: Register
+16:52:29=>[info] zookeeper_init success!
+16:52:29=>[info] zookeeper create node success! path: /UserServiceRpc
+16:52:29=>[info] zookeeper create node success! path: /UserServiceRpc/Register
+16:52:29=>[info] zookeeper create node success! path: /UserServiceRpc/Login
+16:52:29=>[info] RpcProvider start service at 127.0.0.1:8001
+16:52:41=>[info] zookeeper_init success!
+16:52:29=>[info] ====================================================
+16:52:41=>[info] header_size: 25
+16:52:41=>[info] service_name: UserServiceRpc
+16:52:41=>[info] method_name: Login
+16:52:41=>[info] args_size: 19
+16:52:41=>[info] args_str: 
+	zhang san123456
+16:52:41=>[info] ====================================================
+16:52:41=>[info] zookeeper_init success!
+16:52:41=>[info] ====================================================
+16:52:41=>[info] header_size: 28
+16:52:41=>[info] service_name: UserServiceRpc
+16:52:41=>[info] method_name: Register
+16:52:41=>[info] args_size: 21
+16:52:41=>[info] args_str: d	zhang san123456
+16:52:41=>[info] ====================================================
+18:59:23=>[info] first log message!
+18:59:23=>[error] /home/ubuntu/workplace/code/MPRPC/example/callee/userservice.cc:main:69
+18:59:23=>[info] service_name: UserServiceRpc
+18:59:23=>[info] method_name: Login
+18:59:23=>[info] method_name: Register
+18:59:23=>[info] zookeeper_init success!
+18:59:23=>[info] zookeeper create node success! path: /UserServiceRpc/Register
+18:59:23=>[info] zookeeper create node success! path: /UserServiceRpc/Login
+18:59:23=>[info] RpcProvider start service at 127.0.0.1:8001
+19:2:8=>[info] zookeeper_init success!
+18:59:23=>[info] ====================================================
+19:2:8=>[info] header_size: 25
+19:2:8=>[info] service_name: UserServiceRpc
+19:2:8=>[info] method_name: Login
+19:2:8=>[info] args_size: 19
+19:2:8=>[info] args_str: 
+	zhang san123456
+19:2:8=>[info] ====================================================
+19:2:8=>[info] zookeeper_init success!
+19:2:8=>[info] ====================================================
+19:2:8=>[info] header_size: 28
+19:2:8=>[info] service_name: UserServiceRpc
+19:2:8=>[info] method_name: Register
+19:2:8=>[info] args_size: 21
+19:2:8=>[info] args_str: d	zhang san123456
+19:2:8=>[info] ====================================================
+19:11:39=>[info] zookeeper_init success!
+19:2:8=>[info] ====================================================
+19:11:39=>[info] header_size: 25
+19:11:39=>[info] service_name: UserServiceRpc
+19:11:39=>[info] method_name: Login
+19:11:39=>[info] args_size: 19
+19:11:39=>[info] args_str: 
+	zhang san123456
+19:11:39=>[info] ====================================================
+19:11:39=>[info] zookeeper_init success!
+19:11:39=>[info] ====================================================
+19:12:17=>[info] header_size: 28
+19:12:17=>[info] service_name: UserServiceRpc
+19:12:17=>[info] method_name: Register
+19:12:17=>[info] args_size: 21
+19:12:17=>[info] args_str: d	zhang san123456
+19:12:17=>[info] ====================================================

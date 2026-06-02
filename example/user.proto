@@ -1,0 +1,46 @@
+syntax = "proto3"; //声明了protobuf的版本为proto3
+package  fixbug;
+//定义下面选项，表示生成service服务类和rpc方法，默认不生成
+option cc_generic_services = true;
+// 通用响应结果结构体
+// 用于封装所有RPC接口的基础错误码和错误信息
+message RequestCode {
+  int32 errcode = 1; //结果错误码，0表示成功，非0表示失败
+  bytes errmsg  = 2; //结果消息
+}
+
+// 登录请求消息结构体
+// 客户端向服务端发起登录请求时传递的参数
+message LoginRequest{
+    //string name = 1; //用户名
+    //string pwd = 2; //密码
+    //通常使用bytes来定义
+  bytes name = 1; //用户名
+  bytes pwd  = 2; //密码
+}
+// 登录响应消息结构体
+// 服务端处理登录请求后返回给客户端的结果
+message LoginResponse{
+  RequestCode result  = 1; //结果代码
+  bool        success = 2; //登录是否成功
+}
+message RegisterRequest{
+  uint32 id   = 1; //用户ID
+  bytes name = 2; //用户名
+  bytes pwd  = 3; //密码
+}
+message RegisterResponse{
+  RequestCode result  = 1; //结果代码
+  bool        success = 2; //注册是否成功
+}
+
+//在protobuf中，怎么定义描述rpc方法的类型- service
+service UserServiceRpc{
+  // 登录RPC方法
+  // 入参：LoginRequest（用户名+密码），出参：LoginResponse（登录结果）
+  rpc Login(LoginRequest) returns (LoginResponse); 
+
+  // 注册RPC方法
+  // 入参：RegisterRequest（用户名+密码），出参：RegisterResponse（注册结果）
+  rpc Register(RegisterRequest) returns (RegisterResponse);
+}

@@ -1,0 +1,29 @@
+syntax = "proto3"; //声明了protobuf的版本为proto3
+package  fixbug;
+//定义下面选项，表示生成service服务类和rpc方法，默认不生成
+option cc_generic_services = true;
+
+// 通用响应结果结构体
+// 用于封装所有RPC接口的基础错误码和错误信息
+message RequestCode {
+  int32 errcode = 1; //结果错误码，0表示成功，非0表示失败
+  bytes errmsg  = 2; //结果消息
+}
+
+message GetFriendListRequest{
+  uint32 userid = 1; //用户ID
+}
+
+message GetFriendListResponse {
+  RequestCode    result  = 1; //结果代码
+  repeated bytes friends = 2; //用户信息 列表类型
+
+}
+
+//好友模块
+service FriendServiceRpc{
+  // 获取好友列表RPC方法
+  // 入参：GetFriendListRequest（用户ID），出参：GetFriendListResponse（好友列表结果）
+  rpc GetFriendList(GetFriendListRequest) returns (GetFriendListResponse);
+  
+}
